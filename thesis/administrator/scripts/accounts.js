@@ -1,4 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
+
+	/* Trying to update this into the github :) */
+
 	
 	function getAccounts(){
 		$.ajax({
