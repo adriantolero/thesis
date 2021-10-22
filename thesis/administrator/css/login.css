@@ -1,0 +1,84 @@
+body{
+	background: url("../images/nature2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#card-cont{
+	/*position: relative;*/
+	background-color: rgba(62,62,57,0.91);
+	border-color: rgba(62,62,57,0.91);
+	color: white;
+	border-radius: 15px;
+	transition: 
+}
+
+
+#login-form{
+	margin-left: 10%;
+	/*position: relative;
+	top:0;
+	border-right: solid white 1px;
+	*/
+}
+
+#login-form-content{
+	padding-top: 1em;	
+}
+
+#remove{
+	padding: 9px;
+	background-color: #74614c;
+	border-color: #74614c;
+	color:white;
+}
+
+#showHide{
+	padding: 9px;
+	background-color: #74614c;
+	border-color: #74614c;
+	color:white;
+}
+
+#login-btn{
+	display: block;
+	margin: 0 auto;
+	margin-right: 66px;
+}
+
+#message-container{
+	margin-top: 2em;
+	
+	text-align: center;
+}
+
+#message-collapse{
+	background-color: #5cb85c;
+	border-radius: 5px;
+	padding: 5px;
+	display: none;
+	text-align: center;
+	/*padding: 1em;*/
+}
+
+#message{
+	font-size: 15px;
+	display: inline;
+}
+
+@media(max-width: 768px){
+	#login-form{
+		border-right: none;
+	}
+	#warning-content{
+		border-top: solid white 1px;
+	}
+}
+
+#warning-content{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+

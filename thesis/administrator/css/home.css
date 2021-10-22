@@ -1,0 +1,45 @@
+@media(min-width: 768px){
+    .col-form-label{
+        text-align: right;
+    }
+    #expand-title{
+        display: block;
+    }
+    #mini-title{
+        display: none;
+    }
+}
+
+@media(max-width: 767px){
+    .col-form-label{
+        text-align: left;
+    }
+    #expand-title{
+        display: none;
+    }
+    #mini-title{
+        display: block;
+    }
+}
+
+body{
+    /*background-color: rgba(56,197,125,1);*/
+}
+
+#userDropdown{
+	margin-right: 4.5em;
+	margin-left: auto;
+}
+
+@media(max-width: 768px){
+    #hideToggle{
+        display: none; 
+    }
+    #userDropdown-btn{
+        margin-left: auto;
+        margin-top: 4.5px;
+    }
+    #userDropdown{
+    	margin-right: 0;
+    }
+}

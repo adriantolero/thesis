@@ -1,0 +1,202 @@
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+body{
+	/*background-color: rgba(56,197,125,1);*/
+}
+
+/**********************************
+			Reservation
+**********************************/
+
+#viewReq-btn,#removeReq-btn{
+	width: 100px;
+}
+
+#approved-wrapper{
+	display: none;
+}
+
+#addSchool-msg,#addSchoolAddress-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#addCourse-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#addMajor2-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#create-name-msg,#create-bdate-msg,
+#create-address-msg,#create-contact-msg,
+#create-email-msg,#create-school-msg,
+#create-course-msg,#create-major-msg,#create-yrGrad-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#vw-name-msg,#vw-bdate-msg,
+#vw-address-msg,#vw-contact-msg,
+#vw-email-msg,#vw-school-msg,
+#vw-course-msg,#vw-major-msg,#vw-yrGrad-msg{
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#view-addSchool-msg,#view-addSchoolAddress-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#view-addCourse-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#create_requests,#vw_requests{
+	width: 150px;
+}
+
+#create-request-name-msg,#create-request-bdate-msg,
+#create-request-address-msg,#create-request-contact-msg,
+#create-request-email-msg,#create-request-school-msg,
+#create-request-course-msg,#create-request-major-msg,
+#create-request-yrGrad-msg{
+	/*display: none;*/
+	margin-left: 10px;
+	color: #ff7676;
+	
+}
+
+#request-addSchool-msg,#request-addSchoolAddress-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#request-addCourse-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+#request-addMajor2-msg{
+	display: none;
+	margin-left: 10px;
+	color: #ff7676;
+}
+
+.column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+@media (min-width: 992px) {
+  
+}
+
+#vw-requests-modal .modal-dialog{
+    max-width: 90%;
+}
+
+#reviewer_requests_wrapper{
+	width: 100%;
+	overflow-x: auto;
+}
+
+#rev-view{
+	width: 5%;
+	text-align: center;
+}
+
+#rev-name{
+	width: 20%;
+	text-align: center;
+}
+
+#rev-date{
+	width: 20%;
+	text-align: center;
+}
+
+#rev-days-left{
+	width: 15%;
+	text-align: center;
+}
+
+#rev-action{
+	width: 20%;
+	text-align: center;
+}
+
+#btn-request-wrapper{
+	margin: auto;
+}
+
+#addRequest{
+	width: 200px;
+}
+
+#vw-removed-modal .modal-dialog{
+    max-width: 90%;
+}
+
+#rem-rev-view{
+	width: 5%;
+	text-align: center;
+}
+
+#rem-rev-name{
+	width: 35%;
+	text-align: center;
+}
+
+#rem-rev-date{
+	width: 30%;
+	text-align: center;
+}
+
+#rem-rev-action{
+	width: 30%;
+	text-align: center;
+}
+
+#btn-wrapper{
+	text-align: center;
+	margin-top: 10px;
+}

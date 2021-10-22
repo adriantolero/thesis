@@ -1,0 +1,44 @@
+/*******
+	-------BODY PAGE--------
+*******/
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+		text-align: center;
+	}
+}
+
+/************
+
+	Schedule table
+
+************/
+
+#start{
+	text-align: center;
+}
+#end{
+	text-align: center;
+}
+#status{
+	text-align: center;
+}

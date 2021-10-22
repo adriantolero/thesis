@@ -1,0 +1,53 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+#schoolName{
+	text-align: center;
+	width: 20%;
+}
+
+#schoolAddress{
+	text-align: center;
+	width: 20%;
+}
+
+#schoolType{
+	text-align: center;
+	width: 20%;
+}
+
+#schoolAction{
+	text-align: center;
+	width: 20%;
+}
+
+#addSchool-msg,#addSchoolAddress-msg{
+	color: #ff7676;
+	display: none;
+}
+
+#viewSchool-msg,#viewSchoolAddress-msg{
+	color: #ff7676;
+	display: none;
+}

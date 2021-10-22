@@ -1,0 +1,184 @@
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+body{
+	/*background-color: rgba(56,197,125,1);*/
+}
+
+p{
+	color: black;
+}
+
+#reviewDescription{
+	width: 70%;
+}
+
+#reviewYear{
+	width: 20%;
+}
+
+#reviewAction{
+	width: 10%;
+}
+
+#reviewerList{
+	width: 100%;
+}
+#descr-hdr{
+	width: 30%;
+	text-align: center;
+}
+
+#ORnum-hdr{
+	width: 15%;
+	text-align: center;
+}
+
+#date-paid-hdr{
+	width: 16%;
+	text-align: center;
+}
+
+#amt-paid-hdr{
+	width: 20%;
+	text-align: center;
+}
+
+#action-hdr{
+	width: 20%;
+	text-align: center;
+}
+
+#editBill-btn,#deleteBill-btn{
+	width: 85px;
+}
+
+tbody{
+	text-align: center;
+}
+
+#total_amount,#balance{
+	text-align: right;
+}
+
+#invoice_info{
+	display: none;
+}
+
+#invoice_body{
+	overflow-x: auto;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.card-title{
+	text-align: center;
+}
+
+#open-bill-modal-cont{
+	/*margin-left: auto;*/
+}
+
+#open-bill-modal{
+	/*width: 100%;*/	
+}
+
+#close-createReview{
+	display: none;
+}
+
+#add-bill-btn,#edit-bill-btn{
+	width: 100%;
+}
+
+
+
+#add-bill-msg-cont{
+
+}
+
+#add-bill-msg{
+	text-align: center;
+	color: white;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+@media print{
+	#printBill{
+		display: none;
+	}
+	#action-hdr{
+		display: none;
+	}
+}
+
+
+
+
+/***************************
+		
+		Create Bill
+
+****************************/
+
+#add-description-msg,#add-or-num-msg,
+#add-amount-paid-msg,#add-date-paid-msg{
+	display: none;
+	color: #ff7676;
+}
+
+/*****************************
+
+		Edit Bill
+		
+*******************************/
+
+#edit-description-msg,#edit-or-num-msg,
+#edit-amount-paid-msg,#edit-date-paid-msg{
+	display: none;
+	color: #ff7676;
+}
+
+
+
+
+
+/****************************
+			
+			Create Room
+
+****************************/
+
+#create-school-msg,#create-address-msg{
+	display: none;
+	color: #ff7676;
+}
+
+#save{
+	position: absolute;
+	right: 2px;
+}
+

@@ -1,0 +1,105 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+		text-align: center;
+	}
+}
+
+/**************
+		Review
+***************/
+
+#review-container{
+	margin-top: 3em;
+}
+
+#room{
+	width: 10%;
+	text-align: center;
+}
+
+#description{
+	width: 30%;
+	text-align: center;
+}
+
+#start,#end{
+	width: 15%;
+	text-align: center;
+}
+
+
+#slot{
+	width: 10%;
+	text-align: center;
+}
+
+#action{
+	width: 20%;
+	text-align: center;
+}
+
+/*******************
+
+		Enroll Form
+
+********************/
+
+.column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#joinReview-modal .modal-dialog{
+	/*max-width: 70%;*/
+}
+
+/*#reservationForm{
+	position: relative;
+	height: 430px;
+}
+
+#submitForm{
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+}*/
+
+#create-name-msg,#create-contact-msg,
+#create-school-msg,#create-course-msg,
+#create-major-msg,#create-yrGrad-msg{
+	/*display: none;*/
+	color: #ff7676;
+}
+
+#addSchool-msg,#addSchool-address-msg{
+	color: #ff7676;
+}
+
+#addCourse-msg{
+	color: #ff7676;
+}
+
+#addMajor2-msg{
+	color: #ff7676;
+}

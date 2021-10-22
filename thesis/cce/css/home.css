@@ -1,0 +1,231 @@
+/*******
+	-------BODY PAGE--------
+*******/
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+		text-align: center;
+	}
+}
+
+body{
+	background-color: #645555;
+	/*
+	background-color: #645555;
+	*/
+	/*background: url("../img/bg2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
+}
+
+/*******
+	------- Navigation Bar ---------
+*******/
+
+.navbar-default .navbar-nav>.active> a, 
+.navbar-default .navbar-nav>.active> a:focus, 
+.navbar-default .navbar-nav>.active> 
+a:hover {
+    /*background: #8f3176;*/
+}
+
+/*******
+	-------Review Schedule--------
+*******/
+
+th#date_time{
+	width: 30%;
+	text-align: center;
+}
+
+th#description{
+	width: 70%;
+	text-align: center;
+}
+
+#message{
+	text-align: center;
+}
+
+#login_pic img{
+	min-height: 80px;
+	height: 80px;
+	background-color: #56a3a1;
+	border-radius: 50%;
+}
+
+#login-btn{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5em;
+	margin-right: 1em;	
+}
+
+/*******
+	------THUMBNAILS-------
+*******/
+
+.thumbnail img{
+	min-height: 300px;
+	height: 300px;
+}
+
+/*********
+	--------Rooms--------
+
+*********/
+
+#firstRoom{
+	position: relative;
+	height: 100px;	
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px grey
+}
+
+#firstLink{
+	position: absolute;
+	bottom: 2px;
+	right: 20px;
+}
+
+#secondRoom{
+	position: relative;
+	height: 100px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px grey
+}
+
+#secondLink{
+	position: absolute;
+	bottom: 2px;
+	right: 20px;
+}
+
+/*******
+	-------CAROUSEL--------
+*******/
+
+/*
+#myCarousel .item{
+	height: 500px;
+}
+/*
+#slide1{
+	background: url("../img/CCE.jpg") top center no-repeat;
+	background-size: 100%;
+}
+
+#slide2{
+	background: url("../img/first.jpg") top center no-repeat;
+	background-size: 100%;
+}
+
+#slide3{
+	background: url("../img/second.jpg") top center no-repeat;
+	background-size: 100%;
+}
+*/
+/*****
+	------MEDIA--------
+******/
+/*
+@media(max-width: 480px){
+	#myCarousel .item{
+		height: 550px;
+	}
+
+	.carousel-control{
+		height: 350px;
+	}
+
+	#slide1{
+		background: url("../img/CCE.jpg") top center no-repeat;
+		background-size: 100%;
+
+	}
+
+	#slide2{
+		background: url("../img/first.jpg") top center no-repeat;
+		background-size: 100%;
+	}
+
+	#slide3{
+		background: url("../img/second.jpg") top center no-repeat;
+		background-size: 100%;
+	}
+}
+*/
+/*
+@media(max-width: 768px){
+	#myCarousel .item{
+		height: 400px;
+	}
+
+	.carousel-control{
+		height: 350px;
+	}
+
+	#slide1{
+		background: url("../img/CCE.jpg") top center no-repeat;
+		
+	}
+
+	#slide2{
+		background: url("../img/first.jpg") top center no-repeat;
+		
+	}
+
+	#slide3{
+		background: url("../img/second.jpg") top center no-repeat;
+			
+	}
+}
+*/
+/*
+@media(max-width: 1200px){
+	#myCarousel .item{
+		height: 550px;
+	}
+
+	.carousel-control{
+		height: 350px;
+	}
+
+	#slide1{
+		background: url("../img/CCE.jpg") top center no-repeat;
+		background-size: 100%;
+	}
+
+	#slide2{
+		background: url("../img/first.jpg") top center no-repeat;
+		background-size: 100%;
+	}
+
+	#slide3{
+		background: url("../img/second.jpg") top center no-repeat;
+		background-size: 100%;
+	}
+}
+*/

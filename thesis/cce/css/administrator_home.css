@@ -1,0 +1,26 @@
+/*******
+	-------BODY PAGE--------
+*******/
+
+body{
+	/*
+	background-color: #645555;
+	*/
+	background: url("../img/bg2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+
+/*******
+	------- Navigation Bar ---------
+*******/
+
+.navbar-default .navbar-nav>.active> a, 
+.navbar-default .navbar-nav>.active> a:focus, 
+.navbar-default .navbar-nav>.active> 
+a:hover {
+    background: #8f3176;
+}

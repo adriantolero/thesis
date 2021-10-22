@@ -1,0 +1,383 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+#schedule-table-wrapper{
+	height: 300px;
+	overflow-y: auto;
+}
+
+#tableSched{
+	width: 100%;
+}
+
+#room{
+	width: 5%;
+}
+
+#firstDescription,#secondDescription{
+	width:20%;
+	text-align: center;
+}
+
+#firstStart,#firstEnd,#secondStart,#secondEnd{
+	width: 20%;
+	text-align: center;
+}
+
+#firstRequest,#secondRequest{
+	width: 15%;
+	text-align: center;
+}
+
+#firstActions,#secondActions{
+	width: 20%;
+	text-align: center;
+}
+
+.column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/********************************
+		Add Schedule
+********************************/
+
+#addTitle-msg,#addParticipants-msg,
+#addDatestart-msg,#addTimestart-msg,
+#addDateend-msg,#addTimeend-msg,
+#addNature-msg,#addReservedBy-msg,
+#addReservedByMobile-msg{
+	display: none;
+	color: #ff7676;
+}
+
+/********************************
+		View Schedule
+********************************/
+
+#vwTitle-msg,#vwParticipants-msg,
+#vwDatestart-msg,#vwTimestart-msg,
+#vwDateend-msg,#vwTimeend-msg,
+#vwNature-msg,#vwReservedBy-msg,
+#vwReservedByMobile-msg{
+	display: none;
+	color: #ff7676;
+}
+
+/***********************************
+			View Requests
+************************************/
+
+#viewRequests-modal .modal-dialog{
+	max-width: 100%;
+}
+
+#requestRoom{
+	width: 5%;
+	text-align: center;
+}
+
+#requestDescription{
+	width: 20%;
+	text-align: center;
+}
+
+#requestStart,#requestEnd{
+	width: 10%;
+	text-align: center;
+}
+
+#requestRequisitioner{
+	width: 20%;
+	text-align: center;
+}
+
+#requestDateReserved{
+	width: 10%;
+	text-align: center;
+}
+
+#requestTimeLeft{
+	width: 10%;
+	text-align: center;
+}
+
+#requestActions{
+	width: 15%;
+	text-align: center;
+}
+
+
+
+/***********************************
+			Add Request
+***********************************/
+
+#addTitle-request-msg,#addParticipants-request-msg,
+#addDatestart-request-msg,#addTimestart-request-msg,
+#addDateend-request-msg,#addTimeend-request-msg,
+#addNature-request-msg,#addReservedBy-request-msg,
+#addReservedByMobile-request-msg{
+	display: none;
+	color: #ff7676;
+}
+
+/**********************************
+			View Reject
+***********************************/
+
+#viewReject-modal .modal-dialog{
+	max-width: 90%;
+}
+
+#rejectRoom{
+	width: 5%;
+	text-align: center;
+}
+
+#rejectDescription{
+	width: 20%;
+	text-align: center;
+}
+
+#rejectStart,#rejectEnd{
+	width: 10%;
+	text-align: center;
+}
+
+#rejectRequisitioner{
+	width: 20%;
+	text-align: center;
+}
+
+#rejectDateReserved{
+	width: 10%;
+	text-align: center;
+}
+
+#rejectActions{
+	width: 25%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/**********************************************************************
+
+							Check-in
+
+************************************************************************/
+
+#checkin-room{
+	width: 5%;
+	text-align: center;
+}
+
+#checkin-description{
+	width: 20%;
+	text-align: center;
+}
+
+#checkin-requesitioner{
+	width: 10%;
+	text-align: center;
+}
+
+#checkin-arrival,#checkin-departure,#checkin-checkedin{
+	width: 15%;
+	text-align: center;
+}
+
+#checkin-action{
+	width: 20%;
+	text-align: center;
+}
+
+
+
+
+/****************************************************************************
+
+					View Checkin info
+
+******************************************************************************/
+
+#vw-checkin-Title-msg,#vw-checkin-Participants-msg,
+#vw-checkin-Datestart-msg,#vw-checkin-Timestart-msg,
+#vw-checkin-Dateend-msg,#vw-checkin-Timeend-msg,
+#vw-checkin-Nature-msg,#vw-checkin-ReservedBy-msg,
+#vw-checkin-ReservedByMobile-msg{
+	display: none;
+	color: #ff7676;
+}
+
+
+
+
+/*****************************************
+	
+			Check-out
+
+******************************************/
+
+#createBill-checkout-modal-dialog.modal-dialog{
+	max-width: 70%;
+	height: 500px;
+}
+
+#paymentDescription{
+	width: 50%;
+	text-align: center;
+}
+
+#paymentPayment{
+	width: 20%;
+	text-align: center;
+}
+
+#paymentAction{
+	width: 30%;
+	text-align: center;
+}
+
+#create-amenityDescription-msg,#create-amenityPayment-msg{
+	display: none;
+	color: #ff7676;
+}
+
+#view-amenityDescription-msg,#view-amenityPayment-msg{
+	display: none;
+	color: #ff7676;
+}
+
+
+
+
+
+
+
+
+/*******************************************
+
+
+				Checkout tab
+
+
+********************************************/
+
+#checkout-room{
+	width: 5%;
+	text-align: center;
+}
+
+#checkout-description{
+	width: 30%;
+	text-align: center;
+}
+
+#checkout-requesitioner{
+	width: 10%;
+	text-align: center;
+}
+
+#checkout-checkedin,#checkout-checkedout{
+	width: 15%;
+	text-align: center;
+}
+
+#checkout-action{
+	width: 40%;
+	text-align: center;
+}
+
+
+
+
+/*****************
+	
+	Check-out info
+
+*****************/
+
+#vw-checkout-Title-msg,#vw-checkout-Participants-msg,
+/*#vw-checkout-Datestart-msg,#vw-checkout-Timestart-msg,
+#vw-checkout-Dateend-msg,#vw-checkout-Timeend-msg,*/
+#vw-checkout-Nature-msg,#vw-checkout-ReservedBy-msg,
+#vw-checkout-ReservedByMobile-msg{
+	display: none;
+	color: #ff7676;
+}
+
+#generateBill-checkout-modal-dialog.modal-dialog{
+	max-width: 50%;
+}
+
+
+/***********************
+
+		View Bill
+
+************************/
+
+#viewBill-checkout-modal-dialog.modal-dialog{
+	max-width: 70%;
+	height: 500px;
+}
+
+#viewBill-paymentDescription{
+	width: 50%;
+	text-align: center;
+}
+
+#viewBill-paymentPayment{
+	width: 20%;
+	text-align: center;
+}
+
+#viewBill-paymentAction{
+	width: 30%;
+	text-align: center;
+}
+
+#viewBill-view-amenityDescription-msg,
+#viewBill-view-amenityPayment-msg{
+	display: none;
+	color: #ff7676;
+}
+
+#viewBill-create-amenityDescription-msg,
+#viewBill-create-amenityPayment-msg{
+	display: none;
+	color: #ff7676;
+}

@@ -1,0 +1,43 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+#addCourse-msg{
+	color: #ff7676;
+	display: none;
+}
+
+#viewCourse-msg{
+	color: #ff7676;
+	display: none;
+}
+
+#addMajor-msg{
+	color: #ff7676;
+	display: none;
+}
+
+#viewMajor-msg{
+	color: #ff7676;
+	display: none;
+}

@@ -1,0 +1,52 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+body{
+	/*background-color: rgba(56,197,125,1);*/
+}
+
+/*
+#reviewLists{
+	width: 100%;
+}
+
+#monthlyReport-card{
+	height: 420px;
+	overflow-y: auto;
+}
+
+#monthlyReport-table{
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+#monthlyReport{
+	height: 300px;
+	overflow-x: auto;
+	overflow-y: auto;
+}*/
+
+#mName{
+	/*width: 200px;*/
+}

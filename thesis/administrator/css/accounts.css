@@ -1,0 +1,32 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+#create-username-msg,#create-password-msg,#create-name-msg{
+	color: #ff7676;
+}
+
+#edit-username-msg,#edit-password-msg,#edit-name-msg{
+	color: #ff7676;
+}
+

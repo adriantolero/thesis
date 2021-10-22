@@ -1,0 +1,182 @@
+SELECT rs.str_description,rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,MONTHNAME(pay.d_datepaid),pay.d_datepaid
+FROM review_schedule rs
+LEFT JOIN reservation res
+
+
+
+
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+GROUP BY rev.ch_sname AND 
+ORDER BY pay.d_datepaid ASC
+
+
+
+SELECT rs.str_description,rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,MONTHNAME(pay.d_datepaid),pay.d_datepaid
+FROM review_schedule rs
+LEFT JOIN reservation res
+
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+
+IF STATEMENT
+
+SELECT rs.str_description,IF(sch.i_school_type=1,rs.f_reviewfee_vsu,rs.f_reviewfee_non_vsu),rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,MONTHNAME(pay.d_datepaid),pay.d_datepaid
+FROM review_schedule rs
+LEFT JOIN reservation res
+
+
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+// OHHH YEZZZZ
+
+SELECT rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,MONTHNAME(pay.d_datepaid),pay.d_datepaid,IF(sch.i_school_type=1,rs.f_reviewfee_vsu,rs.f_reviewfee_non_vsu) AS review_fee, (SELECT f_amount_paid AS sum_payment  FROM payment WHERE i_rid=3 AND i_rev_id=126 AND d_datepaid=pay.d_datepaid) 
+FROM review_schedule rs
+LEFT JOIN reservation res
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3 AND res.i_rev_id=126
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+
+
+// LAST NANIIIIII
+
+SELECT rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,MONTHNAME(pay.d_datepaid),pay.d_datepaid,IF(sch.i_school_type=1,rs.f_reviewfee_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_rid=3 AND i_rev_id=126 AND d_datepaid<=pay.d_datepaid),rs.f_reviewfee_non_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_rid=3 AND i_rev_id=126 AND d_datepaid<=pay.d_datepaid)) AS balance
+FROM review_schedule rs
+LEFT JOIN reservation res
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3 AND res.i_rev_id=126
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+//HAPIT NAA
+
+SELECT rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,rs.str_description,IF(sch.i_school_type=1,rs.f_reviewfee_vsu,rs.f_reviewfee_non_vsu) AS Review_fee,MONTHNAME(pay.d_datepaid),pay.d_datepaid,pay.f_amount_paid,IF(sch.i_school_type=1,rs.f_reviewfee_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_rid=res.i_rid AND i_rev_id=res.i_rev_id AND d_datepaid<=pay.d_datepaid),rs.f_reviewfee_non_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_rid=res.i_rid AND i_rev_id=res.i_rev_id AND d_datepaid<=pay.d_datepaid)) AS balance
+FROM review_schedule rs
+LEFT JOIN reservation res
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+
+
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+
+
+
+SELECT rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,rs.str_description,IF(sch.i_school_type=1,rs.f_reviewfee_vsu,rs.f_reviewfee_non_vsu) AS Review_fee,pay.i_pay_id,MONTHNAME(pay.d_datepaid),pay.d_datepaid,pay.f_amount_paid,IF(sch.i_school_type=1,rs.f_reviewfee_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_pay_id=pay.i_pay_id),rs.f_reviewfee_non_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_pay_id=pay.i_pay_id)) AS balance
+FROM review_schedule rs
+LEFT JOIN reservation res
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+
+
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC
+
+
+
+SHEETTTT!! THIS IS IT!
+
+SELECT rev.ch_sname,rev.ch_fname,rev.ch_mi,sch.str_school_name,crs.course,mj.str_major,rs.str_description,IF(sch.i_school_type=1,rs.f_reviewfee_vsu,rs.f_reviewfee_non_vsu) AS Review_fee,pay.i_pay_id,MONTHNAME(pay.d_datepaid),pay.d_datepaid,pay.f_amount_paid,
+
+IF(sch.i_school_type=1,rs.f_reviewfee_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_pay_id<=pay.i_pay_id AND i_rev_id=pay.i_rev_id),
+
+rs.f_reviewfee_non_vsu - (SELECT SUM(f_amount_paid) AS sum_payment  FROM payment WHERE i_pay_id<=pay.i_pay_id AND i_rev_id=pay.i_rev_id)) AS balance
+
+FROM review_schedule rs
+LEFT JOIN reservation res
+ON rs.i_rid=res.i_rid
+LEFT JOIN reviewer rev 
+
+ON res.i_rev_id=rev.i_rev_id
+LEFT JOIN school sch 
+
+
+ON rev.i_sid=sch.i_sid
+LEFT JOIN major mj
+ON rev.i_mid=mj.i_mid
+LEFT JOIN course crs
+ON mj.i_course_id=crs.i_course_id
+
+LEFT JOIN payment pay 
+ON res.i_rev_id=pay.i_rev_id 
+WHERE res.i_rid=3
+ORDER BY pay.d_datepaid,rev.ch_sname,rev.ch_fname ASC

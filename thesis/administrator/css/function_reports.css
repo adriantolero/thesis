@@ -1,0 +1,36 @@
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+th{
+	text-align: center;
+}
+
+@media(print){
+    .page
+    {
+     -webkit-transform: rotate(-90deg); 
+     -moz-transform:rotate(-90deg);
+     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+}

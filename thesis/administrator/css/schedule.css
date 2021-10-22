@@ -1,0 +1,121 @@
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+	}
+}
+
+body{
+	/*background-color: rgba(56,197,125,1);*/
+}
+
+.column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#v-pills-tabContent{
+	
+}
+
+#addReviewSched{
+	width: 100px;
+}
+
+#viewSched-btn{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#editSched-btn{
+	margin-left: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#deleteSched-btn{
+	margin-left: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*******************
+	Modal Input
+*******************/
+
+#create-room,#create-description,
+#create-reviewee,#create-date-start,
+#create-date-end,#create-reviewFee-vsu,
+#create-reviewFee-nonVsu,#create-num-reviewers,#create-status{
+	border-radius: .25rem;
+}
+
+/*******************
+	Modal Input Warning
+*******************/
+
+
+
+#create-room-msg,#create-description-msg,
+#create-reviewee-msg,#create-date-start-msg,
+#create-time-start-msg,#create-date-end-msg,
+#create-time-end-msg,#create-reviewFee-vsu-msg,
+#create-reviewFee-nonVsu-msg,#create-num-reviewers-msg,#create-status-msg{
+	margin-left: 10px;
+	color: #ff7676;
+	display: none;
+}
+
+#createReviewSched{
+	width: 100%;	
+}
+
+#view-room-msg,#view-description-msg,
+#view-reviewee-msg,#view-date-start-msg,
+#view-time-start-msg,#view-date-end-msg,
+#view-time-end-msg,#view-reviewFee-vsu-msg,
+#view-reviewFee-nonVsu-msg,#view-num-reviewers-msg,#view-status-msg{
+	margin-left: 10px;
+	color: #ff7676;
+	display: none;
+}
+
+#manageReviewSched-btn{
+	width: 100%;
+}
+
+#viewSched-btn,#deleteSched-btn{
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

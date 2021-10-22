@@ -1,0 +1,108 @@
+/*******
+	-------BODY PAGE--------
+*******/
+
+@media(min-width: 768px){
+	.col-form-label{
+		text-align: right;
+	}
+	#expand-title{
+		display: block;
+	}
+	#mini-title{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.col-form-label{
+		text-align: left;
+	}
+	#expand-title{
+		display: none;
+	}
+	#mini-title{
+		display: block;
+		text-align: center;
+	}
+}
+
+/*********
+	--------Rooms--------
+
+*********/
+
+#firstRoom{
+	position: relative;
+	height: 100px;	
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px grey
+}
+
+#firstLink{
+	position: absolute;
+	bottom: 2px;
+	right: 20px;
+}
+
+#secondRoom{
+	position: relative;
+	height: 100px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px grey
+}
+
+#secondLink{
+	position: absolute;
+	bottom: 2px;
+	right: 20px;
+}
+
+#create-reservation-outside{
+	position: relative;
+}
+
+#create-reservation-inside{
+	position: absolute;
+	right: 20px;
+}
+
+/**************
+	
+	Create Request
+
+*************/
+
+.column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#addTitle-request-msg,#addParticipants-request-msg,
+#addDatestart-request-msg,#addTimestart-request-msg,
+#addDateend-request-msg,#addTimeend-request-msg,
+#addRoom-request-msg,#addRoom-request-warning,#addNature-request-msg,#addReservedBy-request-msg,
+#addReservedByMobile-request-msg{
+	display: none;
+	color: #ff7676;
+}
+
+/********************
+
+	Preview Request
+
+********************/
+
+#firstCol{
+	width: 30%;	
+}
+
+#secondCol{
+	width: 70%;
+}
+
+#viewRates-modal .modal-dialog{
+	max-width: 80%;
+}
